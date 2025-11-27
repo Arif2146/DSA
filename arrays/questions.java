@@ -60,7 +60,7 @@ public static int search(int x) {
 
 
 
-import java.util.*;
+
 
 /*class questions {
     public static int[] buildArray(int[] nums) {
