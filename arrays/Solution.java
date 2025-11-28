@@ -86,12 +86,16 @@ Given a string sentence containing only lowercase English letters, return true i
         return transposed;
     }
 }*/
-/*The array-form of an integer num is an array representing its digits in left to right order.
-
-For example, for num = 1321, the array form is [1,3,2,1].
-Given num, the array-form of an integer, and an integer k, return the array-form of the integer num + k. */
-class Solution {
-    public List<Integer> addToArrayForm(int[] num, int k) {
-        
+/*Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. */
+/*class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                if (nums[i] + nums[j] == target) {
+                    return new int[]{i, j};
+                }
+            }
+        }
+        return new int[0];
     }
-}
+}*/
