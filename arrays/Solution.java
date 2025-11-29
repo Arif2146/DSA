@@ -119,3 +119,42 @@ class Solution {
         }
     }
 }*/
+/*Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct. */
+/*class Solution {
+    public boolean containsDuplicate(int[] nums) {
+        Arrays.sort(nums);
+        int n = nums.length;
+        for (int i = 1; i < n; i++) {
+            if (nums[i] == nums[i - 1])
+                return true;
+        }
+        return false;
+    }
+}*/
+/* Given an array of integers nums containing n + 1 integers where each integer is in the range [1, n] inclusive.
+class Solution {
+    public int findDuplicate(int[] nums) {
+        Arrays.sort(nums);
+        int n = nums.length;
+        for (int i = 1; i < n; i++) {
+            if (nums[i] == nums[i - 1])
+                return nums[i];
+        }
+        return -1;
+    }
+} */
+//You are given an array of integers arr[]. You have to reverse the given array.
+/* class Solution {
+    public void reverseArray(int arr[]) {
+        int start = 0;
+        int end = arr.length - 1;
+        while (start < end) {
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+            start++;
+            end--;
+        }
+        
+    }
+} */
