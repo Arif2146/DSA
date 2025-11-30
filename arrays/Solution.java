@@ -158,3 +158,38 @@ class Solution {
         
     }
 } */
+//Given an array arr[]. Your task is to find the minimum and maximum elements in the array.
+/* class Solution {
+    public ArrayList<Integer> getMinMax(int[] arr) {
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+        for (int num : arr) {
+            if (num < min) {
+                min = num;
+            }
+            if (num > max) {
+                max = num;
+            }
+        }
+        ArrayList<Integer> result = new ArrayList<>();
+        result.add(min);
+        result.add(max);
+        return result;
+        
+    }
+} */
+//Given an array nums with n objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue.
+/* class Solution {
+    public void sortColors(int[] nums) {
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                if (nums[j] < nums[i]) {
+                    int temp = nums[i];
+                    nums[i] = nums[j];
+                    nums[j] = temp;
+                }
+            }
+        }
+       return;
+    }
+} */
