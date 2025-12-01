@@ -193,3 +193,41 @@ class Solution {
        return;
     }
 } */
+// Given an array arr[], check whether it is sorted in non-decreasing order. Return true if it is sorted otherwise false.
+/* class Solution {
+    public boolean isSorted(int[] arr) {
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] < arr[i - 1]) {
+                return false;
+            }
+        }
+        return true;
+    }
+} */
+//Given an array, arr[] of n integers, and an integer element x, find whether element x is present in the array. Return the index of the first occurrence of x in the array, or -1 if it doesn't exist
+
+/* class Solution {
+    public int search(int arr[], int x) {
+        // code here
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == x) {
+                return i;
+            }
+        }
+        return -1;
+    }
+} */
+//Given an array arr[]. The task is to find the largest element and return it.
+/* class Solution {
+    public static int largest(int[] arr) {
+        // code here
+        int max = Integer.MIN_VALUE;
+        for (int num : arr) {
+            if (num > max) {
+                max = num;
+            }
+        }
+        return max;
+    }
+}
+ */
