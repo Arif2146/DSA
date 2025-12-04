@@ -1,4 +1,4 @@
-import java.util.Scanner;
+package arrays; import java.util.Scanner;
 
 public class basicfunarr {
     public static void printArray(int[] arr) {

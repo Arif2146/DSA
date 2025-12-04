@@ -52,3 +52,58 @@
         return newNumber;
     }
 } */
+//Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+//https://leetcode.com/problems/move-zeroes
+/* class Solution {
+    public void moveZeroes(int[] nums) {
+        int j = 0;
+        for(int i = 0; i < nums.length; i++){
+            if(nums[i] != 0){
+                int temp = nums[i];
+                nums[i] = nums[j];
+                nums[j] = temp;
+                j++;
+            }
+        } 
+        return ;
+    }
+} */
+//Remove Duplicates from Sorted Array
+//https://leetcode.com/problems/remove-duplicates-from-sorted-array
+
+/* class Solution {
+    public static int removeDuplicates(int[] nums) {
+        int j = 0;
+        for(int i = 0; i < nums.length; i++){
+            if(nums[i] != nums[j]){
+                j++;
+                nums[j] = nums[i];
+            }
+        }
+        return j + 1;
+    }
+    
+} */
+//Given an array nums of size n, return the majority element.
+//https://leetcode.com/problems/majority-element
+/* class Solution {
+    public int majorityElement(int[] nums) {
+     for(int i = 0; i < nums.length; i++){
+         int count = 0;
+         for(int j = 0; j < nums.length; j++){
+             if(nums[i] == nums[j]){
+                 count++;
+             }
+         }
+         if(count > nums.length / 2){
+             return nums[i];
+         }
+     }
+     return -1;
+    }
+    public static void main(String[] args) {
+        int[] nums = {2,2,1,1,1,2,2};
+        Solution solution = new Solution();
+        System.out.println(solution.majorityElement(nums));
+    }
+} */
