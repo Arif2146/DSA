@@ -122,4 +122,52 @@
         
     }
 } */
-
+//Given an array of integers nums, return the second-largest element in the array. If the second-largest element does not exist, return -1.
+//https://takeuforward.org/plus/dsa/problems/second-largest-element
+/* class Solution {
+    public int secondLargestElement(int[] nums) {
+       for(int i = 0; i < nums.length; i++){
+           int max = Integer.MIN_VALUE;
+           int secondMax = Integer.MIN_VALUE;
+           for(int j = 0; j < nums.length; j++){
+               if(nums[j] > max){
+                   secondMax = max;
+                   max = nums[j];
+               }
+               else if(nums[j] > secondMax && nums[j] != max){
+                   secondMax = nums[j];
+               }
+           }
+           return secondMax;
+       }
+       return -1;
+    }
+    public static void main(String[] args) {
+    System.out.println(new Solution().secondLargestElement(new int[]{8, 8, 7, 6, 5}));
+    }
+} */
+//Given an integer array nums, rotate the array to the left by one.
+/* class Solution {
+    public void rotateArrayByOne(int[] nums) {
+        int temp = nums[0];
+        for (int i = 0; i < nums.length - 1; i++) {
+            nums[i] = nums[i + 1];
+        }
+        nums[nums.length - 1] = temp;
+    }
+} */
+//Given an integer array nums and a non-negative integer k, rotate the array to the left by k steps.
+/* class Solution {
+    public void rotateArrayByOne(int[] nums) {
+        int temp = nums[0];
+        for (int i = 0; i < nums.length - 1; i++) {
+            nums[i] = nums[i + 1];
+        }
+        nums[nums.length - 1] = temp;
+    }
+    public void rotateArray(int[] nums, int k) {
+        for (int i = 0; i < k; i++) {
+            rotateArrayByOne(nums);
+        }
+    }
+} */
