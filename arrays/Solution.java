@@ -193,5 +193,19 @@ class Solution15 {
         }
         return max;
     } */
-   
+   //https://www.geeksforgeeks.org/dsa/rearrange-array-arri/
+   //Rearrange an array such that arr[i] = i
+   class Solution16 {
+    public static void modifyArray(int[] arr) {
+        // code
+    }
+}
+
+   //https://leetcode.com/problems/best-time-to-buy-and-sell-stock
+   //Best Time to Buy and Sell Stock
+   class Solution17 {
+    public int maxProfit(int[] prices) {
+        return 0;
+    }
+}
 }
