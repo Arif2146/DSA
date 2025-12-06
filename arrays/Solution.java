@@ -290,19 +290,3 @@
  * }
  * }
  */
-// Given an unsorted array arr and a number k which is smaller than the size of
-// the array. Return true if the array contains any duplicate within k distance
-// throughout the array else false.
-class Solution {
-
-    public boolean checkDuplicatesWithinK(int[] arr, int k) {
-        return false;
-    }
-
-    public static void main(String[] args) {
-        int arr[] = { 2, 3, 4, 5, 6, 7, 8, 1 };
-        int k = 3;
-        Solution s = new Solution();
-        System.out.println(s.checkDuplicatesWithinK(arr, k));
-    }
-}
