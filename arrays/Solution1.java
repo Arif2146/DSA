@@ -1,6 +1,6 @@
 //https://www.geeksforgeeks.org/dsa/rearrange-array-arri/
 //Rearrange an array such that arr[i] = i
-class Solution1 {
+/* class Solution1 {
     
 // Function to transform the array
   static void modifyArray(int ar[], int n)
@@ -55,4 +55,4 @@ public static void main(String[] args)
     modifyArray(ar, n);
 }
 }
-
+ */
