@@ -1,23 +1,58 @@
-import java.util.*;
 //https://www.geeksforgeeks.org/dsa/rearrange-array-arri/
 //Rearrange an array such that arr[i] = i
 class Solution1 {
-    public static void modifyArray(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            if(arr[i] != i) {
-                arr[arr[i]] = arr[i];
-                arr[i] = i;
+    
+// Function to transform the array
+  static void modifyArray(int ar[], int n)
+{
+    int i, j, temp;
+    
+    // Iterate over the array
+    for(i = 0; i < n; i++)
+    {
+        for(j = 0; j < n; j++)
+        {
+            
+            // Check is any ar[j]
+            // exists such that
+            // ar[j] is equal to i
+            if (ar[j] == i) 
+            {
+                temp = ar[j];
+                ar[j] = ar[i];
+                ar[i] = temp;
+                break;
             }
-            else {
-                arr[i] = arr[arr[i]];
-                arr[arr[i]] = i;
-            }
-        }  
-       
+        }
     }
-     public static void main(String[] args) {
-        int[] arr = {1, 3, 0, 2};
-        modifyArray(arr);
-        System.out.println(Arrays.toString(arr));
+ 
+    // Iterate over array
+    for(i = 0; i < n; i++)
+    {
+        
+        // If not present
+        if (ar[i] != i)
+        {
+            ar[i] = -1;
+        }
+    }
+ 
+    // Print the output
+    
+    for(i = 0; i < n; i++) 
+    {
+        System.out.print(ar[i] + " ");
     }
 }
+
+ 
+public static void main(String[] args)
+{
+    int n, ar[] = { -1, -1, 6, 1, 9, 
+                     3, 2, -1, 4, -1 };
+    n = ar.length;
+  
+    modifyArray(ar, n);
+}
+}
+
