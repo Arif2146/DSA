@@ -58,11 +58,27 @@ public static void main(String[] args)
  */
 //https://leetcode.com/problems/best-time-to-buy-and-sell-stock
 //Best Time to Buy and Sell Stock
-    class Solution1 {
+/*     class Solution1 {
     public int maxProfit(int[] prices) {
-        return 0;
+        int minPrice=Integer.MAX_VALUE;
+        int maxProfit=0;
+        for(int i=0;i<prices.length;i++){
+            if(prices[i]<minPrice){
+                minPrice=prices[i];
+            }
+            else if(prices[i]-minPrice>maxProfit){
+                maxProfit=prices[i]-minPrice;
+            }
+        }
+        return maxProfit;
     }
-}
+    public static void main(String[] args) {
+        int arr[]={7,1,5,3,6,4};
+        Solution1 s=new Solution1();
+        s.maxProfit(arr);
+        System.out.println(s.maxProfit(arr));
+    }
+} */
 /* //https://www.geeksforgeeks.org/problems/missing-number-in-array1416/1
 //Missing in Array
       class Solution1 {
