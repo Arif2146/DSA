@@ -56,3 +56,18 @@ public static void main(String[] args)
 }
 }
  */
+//https://leetcode.com/problems/best-time-to-buy-and-sell-stock
+//Best Time to Buy and Sell Stock
+    class Solution1 {
+    public int maxProfit(int[] prices) {
+        return 0;
+    }
+}
+/* //https://www.geeksforgeeks.org/problems/missing-number-in-array1416/1
+//Missing in Array
+      class Solution1 {
+      int missingNum(int arr[]) {
+
+      return 0;
+        
+} */

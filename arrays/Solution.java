@@ -191,21 +191,8 @@ class Solution15 {
             if (num > max) max = num;
         }
         return max;
-    } */
-   //https://leetcode.com/problems/best-time-to-buy-and-sell-stock
-   //Best Time to Buy and Sell Stock
-/*    class Solution17 {
-    public int maxProfit(int[] prices) {
-        return 0;
-    }
-    //https://www.geeksforgeeks.org/problems/missing-number-in-array1416/1
-    //Missing in Array
-    class Solution18 {
-    int missingNum(int arr[]) {
-        // code here
-        return 0;
-        
-    }
+    } 
+   
 }
 } 
 } */
