@@ -1,6 +1,5 @@
-
-class Solution {
-/*     public int[] smallerNumbersThanCurrent(int[] nums) {
+/* class Solution {
+    public int[] smallerNumbersThanCurrent(int[] nums) {
         int n = nums.length;
         int[] result = new int[n];
         for (int i = 0; i < n; i++) {
@@ -193,19 +192,21 @@ class Solution15 {
         }
         return max;
     } */
-   //https://www.geeksforgeeks.org/dsa/rearrange-array-arri/
-   //Rearrange an array such that arr[i] = i
-   class Solution16 {
-    public static void modifyArray(int[] arr) {
-        // code
-    }
-}
-
    //https://leetcode.com/problems/best-time-to-buy-and-sell-stock
    //Best Time to Buy and Sell Stock
-   class Solution17 {
+/*    class Solution17 {
     public int maxProfit(int[] prices) {
         return 0;
     }
+    //https://www.geeksforgeeks.org/problems/missing-number-in-array1416/1
+    //Missing in Array
+    class Solution18 {
+    int missingNum(int arr[]) {
+        // code here
+        return 0;
+        
+    }
 }
-}
+} 
+} */
+
