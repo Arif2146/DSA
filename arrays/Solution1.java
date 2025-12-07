@@ -79,11 +79,3 @@ public static void main(String[] args)
         System.out.println(s.maxProfit(arr));
     }
 } */
-/* //https://www.geeksforgeeks.org/problems/missing-number-in-array1416/1
-//Missing in Array
-      class Solution1 {
-      int missingNum(int arr[]) {
-
-      return 0;
-        
-} */
