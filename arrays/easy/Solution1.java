@@ -114,3 +114,25 @@ public static void main(String[] args)
         System.out.println(s.findUnique(arr));
     }
 } */
+//https://leetcode.com/problems/move-zeroes
+//Move Zeroes
+/* import java.util.Arrays;
+class Solution1 {
+    public void moveZeroes(int[] nums) {
+        int j=0;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]!=0){
+                int temp=nums[i];
+                nums[i]=nums[j];
+                nums[j]=temp;
+                j++;
+            }
+        }
+    }
+    public static void main(String[] args) {
+        int arr[]={0,1,0,3,12};
+        Solution1 s=new Solution1();
+        s.moveZeroes(arr);
+        System.out.println(Arrays.toString(arr));
+    }
+} */
