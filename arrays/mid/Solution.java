@@ -1,6 +1,6 @@
 //Product array puzzle
 //https://www.geeksforgeeks.org/problems/product-array-puzzle4525/1
-import java.util.Arrays;
+/* import java.util.Arrays;
 class Solution {
     public static int[] productExceptSelf(int arr[]) {
        int[] muiltiple = new int[arr.length];
@@ -23,4 +23,33 @@ class Solution {
         System.out.println(Arrays.toString(s.productExceptSelf(arr)));
     }
 } 
-
+ */
+//Majority element
+//https://leetcode.com/problems/majority-element
+/* class Solution {
+    public int majorityElement(int[] nums) {
+         Arrays.sort(nums);
+        return nums[nums.length / 2]; 
+         int n = nums.length;
+        
+        for (int i = 0; i < n; i++) {
+            int count = 0;
+            for (int j = 0; j < n; j++) {
+                if (nums[j] == nums[i]) {
+                    count++;
+                }
+            }
+            if (count > n / 2) {
+                return nums[i];
+            }
+        }
+        
+        return -1; 
+    }
+    public static void main(String[] args) {
+        int arr[] = { 2,2,1,1,1,2,2};
+        Solution s=new Solution();
+        System.out.println(s.majorityElement(arr));
+    }
+}
+ */
