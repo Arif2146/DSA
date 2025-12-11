@@ -77,3 +77,26 @@ class Solution {
         System.out.println(s.increasingTriplet(arr));
     }
 } */
+//Product of Array Except Self
+//https://leetcode.com/problems/product-of-array-except-self
+/* import java.util.Arrays;
+class Solution {
+    public int[] productExceptSelf(int[] nums) {
+        int[] muiltiple = new int[nums.length];
+        muiltiple[0] = 1;
+        for (int i = 1; i < nums.length; i++) {
+            muiltiple[i] = muiltiple[i - 1] * nums[i - 1];
+        }
+        int right = 1;
+        for (int i = nums.length - 1; i >= 0; i--) {
+            muiltiple[i] = muiltiple[i] * right;
+            right = right * nums[i];
+        }
+        return muiltiple;
+    }
+    public static void main(String[] args) {
+        int arr[] = { 1,2,3,4};
+        Solution s=new Solution();
+        System.out.println(Arrays.toString(s.productExceptSelf(arr)));
+    }
+} */
