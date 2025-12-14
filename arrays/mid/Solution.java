@@ -100,3 +100,32 @@ class Solution {
         System.out.println(Arrays.toString(s.productExceptSelf(arr)));
     }
 } */
+//Rearrange Array Elements by Sign
+//https://leetcode.com/problems/rearrange-array-elements-by-sign
+/* import java.util.Arrays;
+class Solution {
+    public int[] rearrangeArray(int[] nums) {
+        int n = nums.length;
+        int[] result = new int[n];
+        int posIndex = 0;
+        int negIndex = 1;
+
+        for (int num : nums) {
+            if (num > 0) {
+                result[posIndex] = num;
+                posIndex += 2;
+            } else {
+                result[negIndex] = num;
+                negIndex += 2;
+            }
+        }
+
+        return result;
+    }
+     public static void main(String[] args) {
+        int arr[] = {3,1,-2,-5,2,-4};
+        Solution s=new Solution();
+        System.out.println(Arrays.toString(s.rearrangeArray(arr)));
+    }
+}
+ */
