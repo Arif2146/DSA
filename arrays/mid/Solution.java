@@ -147,4 +147,34 @@ class Solution {
         return 0;
     }
 } */
+//Triplet Sum in Array
+/* import java.util.Arrays;
+class Solution {
+    public static void main(String[] args) {
+        int arr[] = {40, 20, 10, 3, 6, 7};
+        int target = 24;
+        Solution s = new Solution();
+        System.out.println(s.hasTripletSum(arr, target));
+    }
+    public boolean hasTripletSum(int arr[], int target) {
+        Arrays.sort(arr);
+        int n = arr.length;
+        for (int i = 0; i < n - 2; i++) {
+            int left = i + 1;
+            int right = n - 1;
+            while (left < right) {
+                int currentSum = arr[i] + arr[left] + arr[right];
+                if (currentSum == target) {
+                    return true;
+                } else if (currentSum < target) {
+                    left++;
+                } else {
+                    right--;
+                }
+            }
+        }
+        return false;
+    }
+} */
+
 
