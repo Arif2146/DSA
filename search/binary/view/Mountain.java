@@ -1,4 +1,4 @@
-package practice;
+package view;
 
 
 class Mountain {
