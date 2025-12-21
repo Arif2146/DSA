@@ -136,3 +136,25 @@ class Solution1 {
         System.out.println(Arrays.toString(arr));
     }
 } */
+//1217. Minimum Cost to Move Chips to The Same Position
+//https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position
+/* class Solution1 {
+    public int minCostToMoveChips(int[] position) {
+        int even=0;
+        int odd=0;
+        for(int i=0;i<position.length;i++){
+            if(position[i]%2==0){
+                even++;
+            }
+            else{
+                odd++;
+            }
+        }
+        return Math.min(even,odd);
+    }
+    public static void main(String[] args) {
+        int arr[]={1,2,3};
+        Solution1 s=new Solution1();
+        System.out.println(s.minCostToMoveChips(arr));
+    }
+} */
