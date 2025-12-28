@@ -101,7 +101,7 @@ class Solution1 {
 } */
 //34. Find First and Last Position of Element in Sorted Array
 //https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array
-class Solution1 {
+/* class Solution1 {
 
     public int[] searchRange(int[] nums, int target) {
         int start = 0;
@@ -133,4 +133,4 @@ class Solution1 {
         int[] result = sol.searchRange(nums, target);
         System.out.print("First and Last Position: [" + result[0] + "," + result[1] + "]");
     }
-}
+} */
