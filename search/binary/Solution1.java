@@ -99,3 +99,38 @@ class Solution1 {
         System.out.println("Rotated array: " + java.util.Arrays.toString(nums)); // Output: [5,6,7,1,2,3,4]
     }
 } */
+//34. Find First and Last Position of Element in Sorted Array
+//https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array
+class Solution1 {
+
+    public int[] searchRange(int[] nums, int target) {
+        int start = 0;
+        int end = nums.length - 1;
+        while(start <= end) {
+        int mid = start + (end - start) / 2;
+            if (target == nums[mid]) {
+                int first = mid;
+                int last = mid;
+                while(first > 0 && nums[first - 1] == target) {
+                    first--;
+                }
+                while(last < nums.length - 1 && nums[last + 1] == target) {
+                    last++;
+                }
+                return new int[]{first, last};
+            } else if (target > nums[mid]) {
+                start = mid + 1;
+            } else {
+                 end = mid - 1;
+            }
+        }
+        return new int[]{-1, -1};
+    }
+    public static void main(String[] args) {
+        Solution1 sol = new Solution1();
+        int[] nums = {5,7,7,8,8,10};
+        int target = 7;
+        int[] result = sol.searchRange(nums, target);
+        System.out.print("First and Last Position: [" + result[0] + "," + result[1] + "]");
+    }
+}
