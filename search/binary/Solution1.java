@@ -74,7 +74,7 @@ class Solution1 {
 } */
 //189. Rotate Array
 //https://leetcode.com/problems/rotate-array
-class Solution1 {
+/* class Solution1 {
     public void rotate(int[] nums, int k) {
         int n = nums.length;
         k = k % n; // In case k is greater than n
@@ -98,4 +98,4 @@ class Solution1 {
         sol.rotate(nums, k);
         System.out.println("Rotated array: " + java.util.Arrays.toString(nums)); // Output: [5,6,7,1,2,3,4]
     }
-}
+} */
