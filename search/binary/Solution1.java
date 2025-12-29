@@ -134,3 +134,28 @@ class Solution1 {
         System.out.print("First and Last Position: [" + result[0] + "," + result[1] + "]");
     }
 } */
+// Lower Bound
+class Solution1 {
+    int upperBound(int[] arr, int target) {
+        int start = 0;
+        int end = arr.length;
+        while(start < end) {
+            int mid = start + (end - start) / 2;
+            if(arr[mid] < target)  /* if(arr[mid] <= target)( upperBound)  */
+                {
+                start = mid + 1;
+            } else {
+                end = mid;
+            }
+        }
+        return start;
+
+        
+    }
+    public static void main(String[] args) {
+        Solution1 sol = new Solution1();
+        int[] arr = {2, 3, 7, 10, 11, 11, 25};
+        int target = 11;
+        System.out.println(sol.upperBound(arr, target));
+    }
+}
