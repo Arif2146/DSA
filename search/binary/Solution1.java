@@ -135,13 +135,13 @@ class Solution1 {
     }
 } */
 // Lower Bound
-class Solution1 {
+/* class Solution1 {
     int upperBound(int[] arr, int target) {
         int start = 0;
         int end = arr.length;
         while(start < end) {
             int mid = start + (end - start) / 2;
-            if(arr[mid] < target)  /* if(arr[mid] <= target)( upperBound)  */
+            if(arr[mid] <= target)  if(arr[mid] <= target)( upperBound)  
                 {
                 start = mid + 1;
             } else {
@@ -158,4 +158,6 @@ class Solution1 {
         int target = 11;
         System.out.println(sol.upperBound(arr, target));
     }
-}
+} */
+//33. Search in Rotated Sorted Array
+//https://leetcode.com/problems/search-in-rotated-sorted-array
