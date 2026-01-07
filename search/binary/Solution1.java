@@ -215,4 +215,24 @@ class Solution1 {
         int[] arr = {3,4,5,1,2};
         System.out.println(sol.findMin(arr));
     }
+} *///Find Kth Rotation
+/* class Solution1 {
+    public int findKRotation(int arr[]) {
+        int start = 0;
+        int end = arr.length - 1;
+        while(start < end) {
+            int mid = start + (end - start) / 2;
+            if(arr[mid] > arr[end]) {
+                start = mid + 1;
+            } else {
+                end = mid;
+            }
+        }
+        return start;
+    }
+    public static void main(String[] args) {
+        Solution1 sol = new Solution1();
+        int[] arr = {1, 2, 3, 4, 5};
+        System.out.println(sol.findKRotation(arr));
+    }
 } */
