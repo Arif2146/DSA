@@ -289,3 +289,25 @@ class Solution1 {
         System.out.println(sol.findPeakElement(arr));
     }
 } */
+//69. Sqrt(x)
+//https://leetcode.com/problems/sqrtx
+class Solution1 {
+    public int mySqrt(int x) {
+       long start = 1;
+       long end = x; 
+        while(start <= end) {
+            long mid = start + (end - start) / 2;
+            long val = mid * mid;
+            if(val <= x) { 
+              start = mid + 1;
+            } else {
+                end = mid - 1;
+            } 
+        }
+        return (int)(end);
+    }
+    public static void main(String[] args) {
+        Solution1 sol = new Solution1();
+        System.out.println(sol.mySqrt(8));
+    }
+}
