@@ -291,7 +291,7 @@ class Solution1 {
 } */
 //69. Sqrt(x)
 //https://leetcode.com/problems/sqrtx
-class Solution1 {
+/* class Solution1 {
     public int mySqrt(int x) {
        long start = 1;
        long end = x; 
@@ -310,4 +310,41 @@ class Solution1 {
         Solution1 sol = new Solution1();
         System.out.println(sol.mySqrt(8));
     }
+} */
+//Find nth root of m
+/* class Solution1 {
+    public int nth(int mid, int n) {
+        long ans = 1;
+        while(n > 0) {
+          if(n % 2 == 1) {
+          ans = ans * mid;
+           n = n - 1;
+            }
+           else {
+          mid = mid * mid;
+           n = n / 2;
+              }
+    }
+    return (int)(ans);
 }
+    public int nthRoot(int n, int m) {
+        int start = 1;
+        int end = m;
+     while(start <= end) {
+        int mid = start + (end - start) / 2;
+        int midN = nth(mid, n);
+        if(midN == m) {
+        return mid;
+    } else if(midN < m) {
+        start = mid + 1;
+    } else {
+        end = mid - 1;
+    }
+    }
+    return -1;
+    }
+    public static void main(String[] args) {
+        Solution1 sol = new Solution1();
+        System.out.println(sol.nthRoot(4,16));
+    }
+} */
