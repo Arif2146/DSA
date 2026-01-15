@@ -374,3 +374,30 @@ class Solution1 {
         System.out.println("Result: [" + result[0] + "," + result[1] + "]");
     }
 } */
+//367. Valid Perfect Square
+//https://leetcode.com/problems/valid-perfect-square
+/* class Solution1 {
+    public boolean isPerfectSquare(int num) {
+        int start = 0;
+        int end = num;
+        while(start <= end) {
+        long mid = start + (end - start) / 2;
+        long val = mid * mid;
+        if(val == num) {
+            return true;
+        } else if(val < num) {
+            start = (int)mid + 1;
+        } else {
+            end = (int)mid - 1;
+        }
+        }return false;
+    }
+       
+    
+    public static void main(String[] args) {
+        Solution1 sol = new Solution1();
+        int num = 16;
+        System.out.println(sol.isPerfectSquare(num));
+    }
+}
+ */
