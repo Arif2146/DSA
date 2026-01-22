@@ -426,3 +426,28 @@ class Solution1 {
         System.out.println(sol.arrangeCoins(n));
     }
 } */
+//1539. Kth Missing Positive Number
+//https://leetcode.com/problems/kth-missing-positive-number
+/* class Solution1 {
+    public int findKthPositive(int[] arr, int k) {
+        int start = 0;
+        int end = arr.length - 1;
+        while(start <= end) {
+            int mid = start + (end - start) / 2;
+            int missingCount = arr[mid] - (mid + 1);
+            if(missingCount < k) {
+                start = mid + 1;
+            } else {
+                end = mid - 1;
+            }
+        }
+        return start + k;
+    }
+    public static void main(String[] args) {
+        Solution1 sol = new Solution1();
+        int[] arr = {2,3,4,7,11};
+        int k = 5;
+        System.out.println(sol.findKthPositive(arr, k));
+    }
+
+} */
