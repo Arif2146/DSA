@@ -476,3 +476,32 @@ class Solution1 {
         System.out.println(sol.searchInsert(nums, target)); // Output: 2
     }
 } */
+//1351. Count Negative Numbers in a Sorted Matrix
+//https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix
+class Solution1 {
+    public int countNegatives(int[][] grid) {
+        int r = 0;
+        int c = grid[0].length - 1;
+        int count = 0;
+        while (r < grid.length && c >= 0) {
+            if (grid[r][c] < 0) {
+                count += (grid.length - r);
+                c--;
+            } else {
+                r++;
+            }
+        }
+        return count;
+    }
+    public static void main(String[] args) {
+        Solution1 sol = new Solution1();
+        int[][] grid = {
+            {4,3,2,-1},
+            {3,2,1,-1},
+            {1,1,-1,-2},
+            {-1,-1,-2,-3}
+        };
+        System.out.println(sol.countNegatives(grid));
+    }
+
+}
