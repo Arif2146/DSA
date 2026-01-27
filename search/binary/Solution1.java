@@ -478,7 +478,7 @@ class Solution1 {
 } */
 //1351. Count Negative Numbers in a Sorted Matrix
 //https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix
-class Solution1 {
+/* class Solution1 {
     public int countNegatives(int[][] grid) {
         int r = 0;
         int c = grid[0].length - 1;
@@ -504,4 +504,4 @@ class Solution1 {
         System.out.println(sol.countNegatives(grid));
     }
 
-}
+} */
