@@ -84,3 +84,44 @@
         System.out.println(s.findDuplicate(nums));
     }
 } */
+//442. Find All Duplicates in an Array
+//https://leetcode.com/problems/find-all-duplicates-in-an-array
+/* 
+import java.util.ArrayList;
+import java.util.List;
+
+class Solution {
+    public List<Integer> findDuplicates(int[] nums) {
+        sort(nums);
+        List<Integer> duplicates = new ArrayList<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != i + 1) {
+                duplicates.add(nums[i]);
+            }
+        }
+        return duplicates;
+    }
+     public static void main(String[] args) {
+        int[] arr = {4,3,2,7,8,2,3,1};
+         Solution s = new Solution(); 
+        System.out.println(s.findDuplicates(arr));
+    }
+
+    static void sort(int[] arr) {
+        int i = 0;
+        while (i < arr.length) {
+            int correct = arr[i] - 1;
+            if (arr[i] != arr[correct]) {
+                swap(arr, i , correct);
+            } else {
+                i++;
+            }
+        }
+    }
+
+    static void swap(int[] arr, int first, int second) {
+        int temp = arr[first];
+        arr[first] = arr[second];
+        arr[second] = temp;
+    }
+} */
