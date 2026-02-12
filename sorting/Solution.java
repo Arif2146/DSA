@@ -209,3 +209,42 @@ class Solution {
     }
 
 } */
+//645. Set Mismatch
+//https://leetcode.com/problems/set-mismatch
+/* import java.util.*;
+class Solution {
+    public static void main(String[] args) {
+        int[] arr = { 1,2,2,4 };
+        Solution s = new Solution();
+        System.out.println(Arrays.toString(s.findErrorNums(arr)));
+    }
+
+    public int[] findErrorNums(int[] nums) {
+         sort(nums);
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != i + 1) {
+                return new int[]{nums[i], i + 1};
+            }
+        }
+        return new int[]{-1, -1};
+    }
+
+    static void sort(int[] arr) {
+        int i = 0;
+        while (i < arr.length) {
+            int correct = arr[i] - 1;
+            if (arr[i] > 0 && arr[i] <= arr.length && arr[i] != arr[correct]) {
+                swap(arr, i, correct);
+            } else {
+                i++;
+            }
+        }
+    }
+
+    static void swap(int[] arr, int first, int second) {
+        int temp = arr[first];
+        arr[first] = arr[second];
+        arr[second] = temp;
+    }
+
+} */
